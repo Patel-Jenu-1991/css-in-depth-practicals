@@ -16,8 +16,8 @@ h1 {
   display: inline-block;
 }
 
-/* Provides a button-like appearance for the navigational links */
-.nav a {  /* Lowers the first Specificity 0, 1, 1 */
+/* Makes the specificites equal (0, 1, 1) */
+.nav a {
   color: white;
   background-color: #13a4a4;
   padding: 5px;
@@ -25,8 +25,6 @@ h1 {
   text-decoration: none;
 }
 
-/* Increases the second Specificity to 0, 2, 0 */
-.nav .featured {
-  /* The !important annotation is no longer necessary */
+a.featured {
   background-color: orange;
 }
