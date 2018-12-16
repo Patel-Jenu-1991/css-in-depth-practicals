@@ -1,0 +1,21 @@
+/* Selectors with increasing specificities */
+
+/* Four tags */
+html body header h1 {
+  color: blue;
+}
+
+/* Three tags and one class */
+body header.page-header h1 {
+  color: orange;
+}
+
+/* Two classes */
+.page-header .title {
+  color: green;
+}
+
+/* One ID */
+#page-title {
+  color: red;
+}
