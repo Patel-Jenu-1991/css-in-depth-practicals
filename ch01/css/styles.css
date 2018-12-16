@@ -24,9 +24,7 @@ h1 {
   text-decoration: none;
 }
 
-/* The orange background declaration won't override the teal due to
- * selector specificity
- */
+/* Makes the declaration important; it's now a higher-priority origin */
 .featured {
-  background-color: orange;
+  background-color: orange !important;
 }
