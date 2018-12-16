@@ -16,10 +16,17 @@ h1 {
 }
 
 /* Provides a button-like appearance for the navigational links */
-#main-nav a {
+#main-nav a {  /* Higher specificity selector */
   color: white;
   background-color: #13a4a4;
   padding: 5px;
   border-radius: 2px;
   text-decoration: none;
+}
+
+/* The orange background declaration won't override the teal due to
+ * selector specificity
+ */
+.featured {
+  background-color: orange;
 }
