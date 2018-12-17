@@ -21,6 +21,11 @@ h1 {
   display: inline-block;
 }
 
+/* Global link color for the page */
+a:link {
+  color: blue;
+}
+
 /* Makes the specificites equal (0, 1, 1) */
 .nav a {
   color: white;
@@ -32,4 +37,19 @@ h1 {
 
 a.featured {
   background-color: orange;
+}
+
+/* Footer text color set to gray */
+.footer {
+  color: #666;
+  background-color: #ccc;
+  font-size:14px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Inherits font color from the footer */
+.footer a {
+  color: inherit;
+  text-decoration: underline;
 }
