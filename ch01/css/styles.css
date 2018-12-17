@@ -51,6 +51,8 @@ a:link {
 
 a.featured {
   background-color: orange;
+  /* Shadow offset 10px to the right and 2px down */
+  box-shadow: 10px 2px #6f9090;
 }
 
 /* Footer text color set to gray */
@@ -67,3 +69,11 @@ a.featured {
   color: inherit;
   text-decoration: underline;
 }
+
+/*
+ * Working with a property that specifies two measurements
+ * from a corner think "Cartesian grid".
+ *
+ * Working with one that specifies measurements for each side
+ * all the way round an element, think "clock".
+ */
