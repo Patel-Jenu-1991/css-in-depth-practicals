@@ -6,7 +6,21 @@ body {
 /* Reduces the margins and removes user agent list styles */
 h1 {
   color: #2f4f4f;
+  font-weight: bold; /* Won't work due to shorthand Cascaded value */
   margin-bottom: 10px;
+}
+
+.title {
+  /*
+    Initial values expanded equivalent to the following shorthand font property
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: normal;
+    font-size: 32px;
+  */
+  font: 32px Helvetica, Arial, sans-serif;
 }
 
 /* Changes "#main-nav" to ".nav" throughout stylesheet */
