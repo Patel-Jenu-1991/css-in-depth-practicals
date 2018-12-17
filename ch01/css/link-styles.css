@@ -1,0 +1,17 @@
+/* Always specify link styles in order */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
