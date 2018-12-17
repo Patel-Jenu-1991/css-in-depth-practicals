@@ -44,7 +44,7 @@ a:link {
 .nav a {
   color: white;
   background-color: #13a4a4;
-  padding: 10px 15px 0 5px;
+  padding: 5px 15px; /* Top and Bottom then left and right padding */
   border-radius: 2px;
   text-decoration: none;
 }
