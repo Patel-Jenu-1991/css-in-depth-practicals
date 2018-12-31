@@ -1,0 +1,5 @@
+/* Applying ems to padding */
+.padded {
+  font-size: 16px;
+  padding: 1em;  /* Sets padding on all sides equal to font-size */
+}
