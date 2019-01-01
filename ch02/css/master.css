@@ -1,7 +1,22 @@
-/* The :root pseudo-class is equivalent to the HTML type selector. */
+/* Responsive base font-size */
 :root {
-  /* Uses the browser's default size (16 px) */
-  font-size: 1em;
+  /* Applies to all screens, but is overridden for larger screens */
+  font-size: 0.75em;
+}
+@media (min-width: 800px) {
+  /* Applies only to screens 800 px and wider, overriding the original value */
+  :root {
+    font-size: 0.875em;
+  }
+}
+@media (min-width: 1200px) {
+  /* Applies only to screens 1200 px and larger, overriding both values */
+  :root {
+    font-size: 1em;
+  }
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
 }
 hr {
   margin-top: 1.6em;
