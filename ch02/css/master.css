@@ -4,7 +4,7 @@
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.2em; /* Descendent elements inherit the calculated value (19.2 px) */
+  line-height: 1.2; /* Descendent elements inherit the unitless value. */
 }
 hr {
   margin-top: 1.6em;
