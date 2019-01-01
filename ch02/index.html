@@ -29,5 +29,32 @@
     <p class="slogan">
       We love coffee.
     </p>
+    <hr>
+    <ul>
+      <li>
+        Top level
+        <ul>
+          <!-- This list is nested inside the first one,
+            inheriting its font size -->
+          <li>
+            Second level
+            <ul>
+              <!-- ...and this one is nested inside of that, inside of that,
+                inheriting the second list's font-size... -->
+              <li>
+                Third level
+                <ul>
+                  <!-- ...and so on -->
+                  Fourth level
+                  <ul>
+                    <li>Fifth level</li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </body>
 </html>
