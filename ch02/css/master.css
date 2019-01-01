@@ -3,6 +3,8 @@
   font-size: calc(0.5em + 1vw);
   /* Defining a custom property */
   --main-font: Helvetica, Arial, sans-serif;
+  /* Using custom properties for colors */
+  --brand-color: #369; /* Defines a blue brand-color variable */
 }
 body {
   line-height: 1.2; /* Descendent elements inherit the unitless value. */
@@ -13,6 +15,7 @@ hr {
 /* Sets the font family for paragraphs to Helvetica, Arial, sans-serif */
 p {
   font-family: var(--main-font);
+  color: var(--brand-color);
 }
 /* Applying ems to padding */
 .padded {
