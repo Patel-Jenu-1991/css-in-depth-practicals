@@ -3,3 +3,17 @@
   font-size: 16px;
   padding: 1em;  /* Sets padding on all sides equal to font-size */
 }
+/* Applying ems applied to different elements */
+.box {
+  padding: 1em;
+  border-radius: 1em;
+  background-color: lightgray;
+}
+/* Different font sizes, which will define the elements' em size */
+.box-small {
+  font-size: 12px;
+}
+
+.box-large {
+  font-size: 18px;
+}
