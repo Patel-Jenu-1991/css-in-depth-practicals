@@ -66,8 +66,10 @@ ul ul {
 .panel.c {
   font-size: 1em;
 }
-/* Panel with relative units */
+/* Creating a larger version of the panel */
 .panel {
+  /* Establishes a predictable font size for the component */
+  font-size: 1rem;
   /* Uses ems for padding and border radius */
   padding: 1em;
   border-radius: 0.5em;
@@ -77,7 +79,8 @@ ul ul {
 .panel > h2 {
   /* Removes extra space from the panel top */
   margin-top: 0;
-  font-size: 0.8rem; /* Styles the heading font using rems for font size */
+  /* Uses ems to make other fonts relative to the established parent font size */
+  font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase;
 }
