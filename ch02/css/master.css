@@ -4,6 +4,7 @@
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2; /* Descendent elements inherit the unitless value. */
 }
 hr {
   margin-top: 1.6em;
@@ -22,7 +23,6 @@ hr {
 .box-small {
   font-size: 12px;
 }
-
 .box-large {
   font-size: 18px;
 }
@@ -60,7 +60,6 @@ ul ul {
   border-radius: 0.5em;
   border: 1px solid #999; /* Uses 1 px for a thin border */
 }
-
 .panel > h2 {
   /* Removes extra space from the panel top */
   margin-top: 0;
@@ -72,14 +71,17 @@ ul ul {
 .panel.large { /* Compound selector targets elements with both panel and large classes */
   font-size: 1.2rem;
 }
-
 /* Square element sized using vmin */
 .square {
   width: 90vmin;
   height: 90vmin;
   background-color: #369;
 }
-
 .before-square {
-  clear: both;
+  clear: left;
+}
+/* Line height with a unitless number */
+.about-us {
+  border: 2px solid #999;
+  font-size: 2em;
 }
