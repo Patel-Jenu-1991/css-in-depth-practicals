@@ -81,8 +81,18 @@ ul ul {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 /* Scaling the entire panel with one declaration */
 .panel.large { /* Compound selector targets elements with both panel and large classes */
   font-size: 1.2rem;
+}
+
+/* Square element sized using vmin */
+.square {
+  width: 90vmin;
+  height: 90vmin;
+  background-color: #369;
+}
+
+.before-square {
+  clear: both;
 }
