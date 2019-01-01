@@ -84,3 +84,8 @@ ul ul {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* Scaling the entire panel with one declaration */
+.panel.large { /* Compound selector targets elements with both panel and large classes */
+  font-size: 1.2rem;
+}
