@@ -41,6 +41,16 @@ ul ul {
   /* Lists within lists should have the same font size as their parent */
   font-size: 1em;
 }
+/* Panel figure */
+.panel.a {
+  font-size: 0.75em;
+}
+.panel.b {
+  font-size: 0.875em;
+}
+.panel.c {
+  font-size: 1em;
+}
 /* Panel with relative units */
 .panel {
   /* Uses ems for padding and border radius */
