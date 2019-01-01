@@ -14,8 +14,10 @@ hr {
 }
 /* Sets the font family for paragraphs to Helvetica, Arial, sans-serif */
 p {
-  font-family: var(--main-font);
-  color: var(--brand-color);
+  /* Specifies a fallback value of sans-serif */
+  font-family: var(--main-font, sans-serif);
+  /* The secondary-color variable is not defined, so the fallback value is used */
+  color: var(--secondary-color, blue);
 }
 /* Applying ems to padding */
 .padded {
