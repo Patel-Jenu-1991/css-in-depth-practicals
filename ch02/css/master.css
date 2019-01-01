@@ -1,5 +1,7 @@
-body {
-  font-size: 16px;
+/* The :root pseudo-class is equivalent to the HTML type selector. */
+:root {
+  /* Uses the browser's default size (16 px) */
+  font-size: 1em;
 }
 hr {
   margin-top: 1.6em;
@@ -31,7 +33,8 @@ hr {
 }
 /* Applying ems to a list */
 ul {
-  font-size: 0.8em;
+  /* rem is short for root em */
+  font-size: 0.8rem;
 }
 /* correcting the shrinking text */
 ul ul {
