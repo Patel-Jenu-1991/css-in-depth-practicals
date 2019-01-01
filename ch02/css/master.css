@@ -1,19 +1,6 @@
-/* Responsive base font-size */
+/* Using calc() to define font-size in ems and vh units */
 :root {
-  /* Applies to all screens, but is overridden for larger screens */
-  font-size: 0.75em;
-}
-@media (min-width: 800px) {
-  /* Applies only to screens 800 px and wider, overriding the original value */
-  :root {
-    font-size: 0.875em;
-  }
-}
-@media (min-width: 1200px) {
-  /* Applies only to screens 1200 px and larger, overriding both values */
-  :root {
-    font-size: 1em;
-  }
+  font-size: calc(0.5em + 1vw);
 }
 body {
   font-family: Helvetica, Arial, sans-serif;
