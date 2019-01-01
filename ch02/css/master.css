@@ -41,3 +41,18 @@ ul ul {
   /* Lists within lists should have the same font size as their parent */
   font-size: 1em;
 }
+/* Panel with relative units */
+.panel {
+  /* Uses ems for padding and border radius */
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 1px solid #999; /* Uses 1 px for a thin border */
+}
+
+.panel > h2 {
+  /* Removes extra space from the panel top */
+  margin-top: 0;
+  font-size: 0.8rem; /* Styles the heading font using rems for font size */
+  font-weight: bold;
+  text-transform: uppercase;
+}
