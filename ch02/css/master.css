@@ -5,6 +5,8 @@
   --main-font: Helvetica, Arial, sans-serif;
   /* Using custom properties for colors */
   --brand-color: #369; /* Defines a blue brand-color variable */
+  /* defines a thin border */
+  --thin-border: 1px solid #999;
 }
 body {
   line-height: 1.2; /* Descendent elements inherit the unitless value. */
@@ -18,6 +20,11 @@ p {
   font-family: var(--main-font, sans-serif);
   /* The secondary-color variable is not defined, so the fallback value is used */
   color: var(--secondary-color, blue);
+}
+h1 {
+  font-family: fantasy, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
 }
 /* Applying ems to padding */
 .padded {
@@ -68,7 +75,7 @@ ul ul {
   /* Uses ems for padding and border radius */
   padding: 1em;
   border-radius: 0.5em;
-  border: 1px solid #999; /* Uses 1 px for a thin border */
+  border: var(--thin-border); /* Uses 1 px for a thin border */
 }
 .panel > h2 {
   /* Removes extra space from the panel top */
@@ -94,4 +101,22 @@ ul ul {
 .about-us {
   border: 2px solid #999;
   font-size: 2em;  /* Evaluates to 32px */
+}
+/* style examples */
+.examples {
+  border: var(--thin-border);
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+
+.examples h2 {
+  font-weight: var(--main-font);
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.examples dt {
+  font-family: var(--main-font);
+  text-transform: capitalize;
 }
