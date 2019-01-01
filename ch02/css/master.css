@@ -29,3 +29,7 @@ hr {
   padding: 1.2em; /* Evaluates to 23.04px */
   background-color: #ccc;
 }
+/* Applying ems to a list */
+ul {
+  font-size: 0.8em;
+}
