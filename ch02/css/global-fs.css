@@ -1,0 +1,4 @@
+/* Antipattern: globally resetting font-size to 10px */
+html {
+  font-size: .625em;
+}
