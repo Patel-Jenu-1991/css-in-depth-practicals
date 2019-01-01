@@ -5,11 +5,14 @@
   --main-font: Helvetica, Arial, sans-serif;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.2; /* Descendent elements inherit the unitless value. */
 }
 hr {
   margin-top: 1.6em;
+}
+/* Sets the font family for paragraphs to Helvetica, Arial, sans-serif */
+p {
+  font-family: var(--main-font);
 }
 /* Applying ems to padding */
 .padded {
