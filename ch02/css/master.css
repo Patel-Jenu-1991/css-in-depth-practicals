@@ -33,3 +33,8 @@ hr {
 ul {
   font-size: 0.8em;
 }
+/* correcting the shrinking text */
+ul ul {
+  /* Lists within lists should have the same font size as their parent */
+  font-size: 1em;
+}
