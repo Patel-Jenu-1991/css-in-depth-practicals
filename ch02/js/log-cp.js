@@ -7,3 +7,6 @@ var rootElement = document.documentElement,
 
 // Ensures mainColor is a String and trims whitespace; logs "#fff"
 console.log(String(mainColor).trim());
+
+// Sets --main-bg to a light blue on the root element
+rootElement.style.setProperty('--main-bg', '#cdf');
