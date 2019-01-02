@@ -51,3 +51,14 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
 }
+.dark {
+  /* Puts a margin between the dark container and the preceding panel */
+  margin-top: 2em;
+  padding: 1em;
+  /* Applies a dark gray background to the dark container */
+  background-color: #999;
+  /* Redefines the --main-bg and --main-color
+   * variables within the scope of the container */
+  --main-bg: #333;
+  --main-color: #fff;
+}
