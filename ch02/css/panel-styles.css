@@ -28,7 +28,8 @@ h1 {
     rgba(224, 182, 34, 0.85),
     rgba(235, 88, 34, 0.85)
   );
-    color: rgba(255, 255, 255, 0.85);
+  box-shadow: 5px 5px rgba(209, 209, 209, 0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-family: sans-serif;
   font-size: 1.2rem;
   letter-spacing: 1px;
