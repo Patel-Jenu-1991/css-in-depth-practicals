@@ -16,10 +16,7 @@ header {
   color: #fff;
   background-color: #0072b0;
   border-radius: 0.5em;
-  /* Equal top and bottom padding vertically
-   * centers an element's content without a fixed height. */
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding: 1em 1.5em;
 }
 main {
   /* Fixes IE bug */
