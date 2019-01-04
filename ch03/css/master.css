@@ -41,3 +41,13 @@ main {
   background-color: #fff;
   border-radius: .5em;
 }
+/* The block element fills the available width and puts each link on its own line */
+.button-link {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  background-color: #0090C9;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
