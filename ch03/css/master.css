@@ -31,10 +31,10 @@ main {
 .sidebar {
   /* Floats the sidebar left and sets the width at 30% */
   float: left;
-  /* Subtracts 1% from the width... */
-  width: 29%;
-  /* ...and adds it as a margin for the gutter */
-  margin-left: 1%;
+  /* Subtracts 1.5em from the width... */
+  width: calc(30% - 1.5em);
+  /* ...and adds it as a margin */
+  margin-left: 1.5em;
   /* Adds padding to the sidebar */
   padding: 1.5em;
   background-color: #fff;
