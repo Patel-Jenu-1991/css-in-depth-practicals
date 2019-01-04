@@ -12,10 +12,16 @@ main {
   display: block;
 }
 .main {
+  /* Floats the main column left and sets the width at 70% */
+  float: left;
+  width: 70%;
   background-color: #fff;
   border-radius: .5em;
 }
 .sidebar {
+  /* Floats the sidebar left and sets the width at 30% */
+  float: left;
+  width: 30%;
   /* Adds padding to the sidebar */
   padding: 1.5em;
   background-color: #fff;
