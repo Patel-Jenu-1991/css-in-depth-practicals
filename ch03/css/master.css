@@ -21,31 +21,22 @@ main {
   /* Fixes IE bug */
   display: block;
 }
-/* Adds a new wrapper element with negative margins */
-.wrapper {
-  margin-left: -1.5em;
-  margin-right: -1.5em;
-}
-/* Makes the container layout resemble a table */
+/* Applies flex display to the container */
 .container {
-  display: table;
-  /* Makes the table fill its container's width */
-  width: 100%;
-  /* Applies horizontal border spacing between table cells */
-  border-spacing: 1.5em 0;
+  display: flex;
 }
-/* Makes the column layout mimic table cells */
+/* Items inside the flex container don't need specified display or float properties */
 .main {
-  display: table-cell;
   width: 70%;
   background-color: #fff;
   border-radius: .5em;
 }
 .sidebar {
-  display: table-cell;
   width: 30%;
   /* Adds padding to the sidebar */
   padding: 1.5em;
+  /* Margins work as before with floats */
+  margin-left: 1.5em;
   background-color: #fff;
   border-radius: .5em;
 }
