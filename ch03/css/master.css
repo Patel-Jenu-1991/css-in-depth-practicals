@@ -1,8 +1,12 @@
+:root {
+  /* Applies border box sizing to the root element */
+  box-sizing: border-box;
+}
 *,
 ::before,
 ::after {
-  /* Applies border box sizing to all elements and pseudo-elements on the page */
-  box-sizing: border-box;
+  /* Tells all other elements and pseudo-elements to inherit their box sizing */
+  box-sizing: inherit;
 }
 body {
   background-color: #eee;
