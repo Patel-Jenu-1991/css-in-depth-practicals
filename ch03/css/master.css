@@ -11,7 +11,9 @@ main {
   /* Fixes IE bug */
   display: block;
 }
+/* Changes the box model to border-box sizing */
 .main {
+  box-sizing: border-box;
   /* Floats the main column left and sets the width at 70% */
   float: left;
   width: 70%;
@@ -19,6 +21,7 @@ main {
   border-radius: .5em;
 }
 .sidebar {
+  box-sizing: border-box;
   /* Floats the sidebar left and sets the width at 30% */
   float: left;
   width: 30%;
