@@ -12,6 +12,9 @@ body {
   background-color: #eee;
   font-family: Helvetica, Arial, sans-serif;
 }
+body * + * {
+  margin-top: 1.5em;
+}
 header {
   color: #fff;
   background-color: #0072b0;
@@ -44,16 +47,12 @@ main {
 /* The block element fills the available width and puts each link on its own line */
 .button-link {
   display: block;
-  padding: 0.5em;
+  padding: .5em;
   color: #fff;
   background-color: #0090C9;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-/* Only apply a top margin to button-links that immediately follow another button-link */
-.button-link + .button-link {
-  margin-top: 1.5em;
 }
 .sponsor-link {
   display: block;
