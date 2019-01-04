@@ -21,19 +21,23 @@ main {
   /* Fixes IE bug */
   display: block;
 }
+/* Makes the container layout resemble a table */
+.container {
+  display: table;
+  /* Makes the table fill its container's width */
+  width: 100%;
+}
+/* Makes the column layout mimic table cells */
 .main {
-  /* Floats the main column left and sets the width at 70% */
-  float: left;
+  display: table-cell;
   width: 70%;
   background-color: #fff;
   border-radius: .5em;
 }
 .sidebar {
-  /* Floats the sidebar left and sets the width at 30% */
-  float: left;
-  /* Subtracts 1.5em from the width... */
-  width: calc(30% - 1.5em);
-  /* ...and adds it as a margin */
+  display: table-cell;
+  width: 30%;
+  /* Margin no longer works */
   margin-left: 1.5em;
   /* Adds padding to the sidebar */
   padding: 1.5em;
