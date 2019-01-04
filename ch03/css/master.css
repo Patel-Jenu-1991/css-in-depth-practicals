@@ -51,3 +51,7 @@ main {
   text-decoration: none;
   text-transform: uppercase;
 }
+/* Only apply a top margin to button-links that immediately follow another button-link */
+.button-link + .button-link {
+  margin-top: 1.5em;
+}
