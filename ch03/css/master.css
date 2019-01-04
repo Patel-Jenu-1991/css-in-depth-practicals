@@ -18,13 +18,15 @@ body * + * {
 header {
   color: #fff;
   background-color: #0072b0;
-  border-radius: 0.5em;
+  border-radius: .5em;
   padding: 1em 1.5em;
 }
+/*
 main {
-  /* Fixes IE bug */
+  Fixes IE bug
   display: block;
 }
+*/
 /* Applies flex display to the container */
 .container {
   display: flex;
@@ -32,6 +34,8 @@ main {
 /* Items inside the flex container don't need specified display or float properties */
 .main {
   width: 70%;
+  /* Adds padding to the main column */
+  padding: 1em 1.5em;
   background-color: #fff;
   border-radius: .5em;
 }
@@ -39,6 +43,8 @@ main {
   width: 30%;
   /* Adds padding to the sidebar */
   padding: 1.5em;
+  /* Removes the top margin applied by the lobotomized owl */
+  margin-top: 0;
   /* Margins work as before with floats */
   margin-left: 1.5em;
   background-color: #fff;
@@ -55,6 +61,7 @@ main {
   text-transform: uppercase;
 }
 .sponsor-link {
+  /* Won't display due to unknown reasons */
   display: block;
   color: #0072b0;
   font-weight: bold;
