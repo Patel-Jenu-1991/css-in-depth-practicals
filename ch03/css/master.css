@@ -21,11 +21,18 @@ main {
   /* Fixes IE bug */
   display: block;
 }
+/* Adds a new wrapper element with negative margins */
+.wrapper {
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+}
 /* Makes the container layout resemble a table */
 .container {
   display: table;
   /* Makes the table fill its container's width */
   width: 100%;
+  /* Applies horizontal border spacing between table cells */
+  border-spacing: 1.5em 0;
 }
 /* Makes the column layout mimic table cells */
 .main {
@@ -37,8 +44,6 @@ main {
 .sidebar {
   display: table-cell;
   width: 30%;
-  /* Margin no longer works */
-  margin-left: 1.5em;
   /* Adds padding to the sidebar */
   padding: 1.5em;
   background-color: #fff;
