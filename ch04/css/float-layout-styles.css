@@ -43,8 +43,10 @@ header {
 .media {
   /* Floats each media box to the left */
   float: left;
-  /* Sets a width to fit two boxes across the page */
-  width: 50%;
+  /* Adds a right and bottom margin to each media element */
+  margin: 0 1.5em 1.5em 0;
+  /* Subtracts the margin from the width to avoid unwanted wrapping */
+  width: calc(50% - 1.5em);
   padding: 1.5em;
   background-color: #eee;
   border-radius: 0.5em;
