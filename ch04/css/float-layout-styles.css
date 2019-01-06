@@ -33,6 +33,13 @@ header {
   background-color: #fff;
   border-radius: .5em;
 }
+.container {
+  /* Sets a minimum width of 1,080px */
+  max-width: 1080px;
+  /* Auto left and right margins will grow to fill the available
+   * space, centering the element within the outer container. */
+  margin: 0 auto;
+}
 
 /* Navigation styles */
 nav ul {
