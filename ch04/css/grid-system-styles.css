@@ -63,8 +63,8 @@ header {
   margin: 0 auto;
 }
 .media {
-  /* Deleted float, margin, and width declarations */
-  padding: 1.5em;
+  /* Adds a 1.5em bottom padding to match the left and right padding */
+  padding: 0 1.5em 1.5em;
   background-color: #eee;
   border-radius: 0.5em;
 }
