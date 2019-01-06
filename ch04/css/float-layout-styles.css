@@ -55,6 +55,18 @@ header {
   /* Each new row clears the row above */
   clear: left;
 }
+.media-image {
+  /* Floats image to the left */
+  float: left;
+}
+.media-body {
+  /* Removes the top margin applied by the lobotomized owl */
+  margin-top: 0;
+}
+.media-body h4 {
+  /* Overrides the top margin applied by user agent styles */
+  margin-top: 0;
+}
 /* Causes both ::before and ::after pseudo elements to appear */
 .clearfix::before,
 .clearfix::after {
