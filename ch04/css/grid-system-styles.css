@@ -63,20 +63,12 @@ header {
   margin: 0 auto;
 }
 .media {
-  /* Floats each media box to the left */
-  float: left;
-  /* Adds a right and bottom margin to each media element */
-  margin: 0 1.5em 1.5em 0;
-  /* Subtracts the margin from the width to avoid unwanted wrapping */
-  width: calc(50% - 1.5em);
+  /* Deleted float, margin, and width declarations */
   padding: 1.5em;
   background-color: #eee;
   border-radius: 0.5em;
 }
-.media:nth-child(odd) {
-  /* Each new row clears the row above */
-  clear: left;
-}
+/* Deleted the .media:nth-child(odd) ruleset with the clear:left declaration */
 .media-image {
   /* Floats image to the left */
   float: left;
