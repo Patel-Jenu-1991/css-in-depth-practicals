@@ -49,6 +49,10 @@ header {
   background-color: #eee;
   border-radius: 0.5em;
 }
+.media:nth-child(odd) {
+  /* Each new row clears the row above */
+  clear: left;
+}
 /* Causes both ::before and ::after pseudo elements to appear */
 .clearfix::before,
 .clearfix::after {
