@@ -28,6 +28,10 @@ body * + * {
 /* Targets all elements with a class attribute that includes "column-" */
 [class*="column-"] {
   float: left;
+  /* Adds .75em left and right padding to each column element */
+  padding: 0 0.75em;
+  /* Removes top margins from columns */
+  margin-top: 0;
 }
 .column-1 { width: 8.3333%; }
 .column-2 { width: 16.6667%; }
