@@ -49,13 +49,15 @@ header {
   background-color: #eee;
   border-radius: 0.5em;
 }
-/* Targets the pseudo-element at the end of the container */
+/* Causes both ::before and ::after pseudo elements to appear */
+.clearfix::before,
 .clearfix::after {
-  /* A non-inline display value and a content value cause
-  the pseudo-element to appear in the document */
-  display: block;
+  /* Prevents margins from collapsing through the pseudo elements */
+  display: table;
   content: " ";
-  /* Makes the pseudo-element clear all floats in the container */
+}
+/* Only the ::after pseudo element needs to clear floats. */
+.clearfix::after {
   clear: both;
 }
 
