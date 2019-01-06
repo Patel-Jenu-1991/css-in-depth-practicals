@@ -5,16 +5,22 @@
 ---
 
 ## Chapters
-- Chapter 1: Understanding Cascade, Specificities, and Inheritance
+### **Chapter 01:** Understanding Cascade, Specificities, and Inheritance
   * The four parts that make up the Cascade
   * Difference between Cascade and Inheritance
   * Control application of styles to elements
   * shorthand gotchas
-- Chapter 2: Working with relative units
+### **Chapter 02:** Working with relative units
   * The versatility of relative units
   * How to use ems and rems, without letting them drive you mad
   * Using viewport-relative units
   * An introdcution to CSS variables
+### **Chapter 03:** Mastering the box model
+  * Practical advice for element sizing
+  * Vertical centring
+  * Columns of equal height
+  * Negative margins and margin collapsing
+  * Consistent spacing of components on the page
 ---
 Add general repo description upon completing each chapter
 
