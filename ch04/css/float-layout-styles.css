@@ -49,6 +49,15 @@ header {
   background-color: #eee;
   border-radius: 0.5em;
 }
+/* Targets the pseudo-element at the end of the container */
+.clearfix::after {
+  /* A non-inline display value and a content value cause
+  the pseudo-element to appear in the document */
+  display: block;
+  content: " ";
+  /* Makes the pseudo-element clear all floats in the container */
+  clear: both;
+}
 
 /* Navigation styles */
 nav ul {
