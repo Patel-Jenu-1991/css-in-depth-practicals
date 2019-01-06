@@ -1,0 +1,110 @@
+/* Global border-box fix */
+:root {
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: inherit;
+}
+/* Lobotomized owl global margins */
+body * + * {
+  margin-top: 1.5em;
+}
+/* Header colors and padding */
+header {
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: #0072b0;
+  border-radius: .5em;
+  margin-bottom: 1.5em;
+}
+/* Main (white container) colors and padding */
+.main {
+  padding: 0 1.5em;
+  background-color: #fff;
+  border-radius: .5em;
+}
+.container {
+  /* Sets a minimum width of 1,080px */
+  max-width: 1080px;
+  /* Auto left and right margins will grow to fill the available
+   * space, centering the element within the outer container. */
+  margin: 0 auto;
+}
+.media {
+  /* Floats each media box to the left */
+  float: left;
+  /* Adds a right and bottom margin to each media element */
+  margin: 0 1.5em 1.5em 0;
+  /* Subtracts the margin from the width to avoid unwanted wrapping */
+  width: calc(50% - 1.5em);
+  padding: 1.5em;
+  background-color: #eee;
+  border-radius: 0.5em;
+}
+.media:nth-child(odd) {
+  /* Each new row clears the row above */
+  clear: left;
+}
+.media-image {
+  /* Floats image to the left */
+  float: left;
+  /* Adds a margin to the image to insert space between it and the body */
+  margin-right: 1.5em;
+}
+.media-body {
+  /* Establishes a new block formatting context so the body
+   * doesn't overlap the floated image */
+  overflow: auto;
+  /* Removes the top margin applied by the lobotomized owl */
+  margin-top: 0;
+}
+.media-body h4 {
+  /* Overrides the top margin applied by user agent styles */
+  margin-top: 0;
+}
+/* Causes both ::before and ::after pseudo elements to appear */
+.clearfix::before,
+.clearfix::after {
+  /* Prevents margins from collapsing through the pseudo elements */
+  display: table;
+  content: " ";
+}
+/* Only the ::after pseudo element needs to clear floats. */
+.clearfix::after {
+  clear: both;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: .0625rem;
+  padding: 0.3125em 0.9375em;
+  text-decoration: none;
+  text-shadow: 0.0625rem 0.0625rem rgba(10, 10, 10, 0.93);
+}
+
+.btn {
+  background-color: rgba(11, 10, 8, 0.91);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(52, 52, 52, 0.95),
+    rgba(24, 24, 24, 0.93)
+  );
+  border-radius: .5rem;
+  color: rgba(78, 169, 252, 0.81);
+}
