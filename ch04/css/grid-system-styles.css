@@ -19,6 +19,12 @@ body {
 body * + * {
   margin-top: 1.5em;
 }
+/* Replicates the clearfix so the row contains its floated columns */
+.row::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 /* Header colors and padding */
 header {
   padding: 1em 1.5em;
