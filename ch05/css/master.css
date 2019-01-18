@@ -55,7 +55,7 @@ body * + * {
 
 /* Targets every list item that follows another
  * list item (that is, all but the first) */
-.site-nav li + li {
+.site-nav > li + li {
   margin-left: 1.5em;
 }
 
@@ -125,6 +125,10 @@ body * + * {
 
 .centered {
   text-align: center;
+}
+
+.centered > small {
+  text-transform: uppercase;
 }
 
 .cost {
