@@ -122,3 +122,42 @@ body * + * {
   padding: .5em 1em;
   cursor: pointer;
 }
+
+.centered {
+  text-align: center;
+}
+
+.cost {
+  display: flex;
+  /* Centeres flex items on both the main and cross axes */
+  justify-content: center;
+  align-items: center;
+  line-height: .7;
+}
+
+.cost > span {
+  /* Overrides margins from the lobotomized owl */
+  margin-top: 0;
+}
+
+/* Sets different font sizes for each part of the cost */
+.cost-currency {
+  font-size: 2rem;
+}
+.cost-dollars {
+  font-size: 4rem;
+}
+.cost-cents {
+  font-size: 1.5rem;
+  /* Overrides align-items for this item,
+   * aligning it to the top instead of center */
+  align-self: flex-start;
+}
+
+.cta-button {
+  display: block;
+  background-color: #cc6b5a;
+  color: white;
+  padding: .5em 1em;
+  text-decoration: none;
+}
