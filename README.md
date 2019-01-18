@@ -30,6 +30,12 @@
   * The media object and double container pattern
   * Block formatting contexts
   * How to build and understand a grid system
+
+### **Chapter 05:** Flexbox
+  * Flex containers and flex items
+  * Main axis and cross axis
+  * Element sizes in flexbox
+  * Element alignment in flexbox
 ---
 Add general repo description upon completing each chapter
 
