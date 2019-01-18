@@ -97,3 +97,28 @@ body * + * {
 .column-sidebar > .tile {
   flex: 1;
 }
+
+/* Makes the heading bold, right aligned, and all caps */
+.login-form h3 {
+  margin: 0;
+  font-size: .9em;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* Styles all text-like inputs (not checkboxes or radio buttons) */
+.login-form input:not([type=checkbox]):not([type=radio]) {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Styles the button */
+.login-form button {
+  margin-top: 1em;
+  border: 1px solid #cc6b5a;
+  background-color: white;
+  padding: .5em 1em;
+  cursor: pointer;
+}
