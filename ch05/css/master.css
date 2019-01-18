@@ -63,3 +63,20 @@ body * + * {
 .site-nav > .nav-right {
   margin-left: auto;
 }
+
+/* Adds a background color and padding to the three tiles */
+.tile {
+  padding: 1.5em;
+  background-color: #fff;
+}
+
+/* Applies a flexbox layout to the main container */
+.flex {
+  display: flex;
+}
+
+/* Removes the top margin and applies space between the flex items */
+.flex > * + * {
+  margin-top: 0;
+  margin-left: 1.5em;
+}
