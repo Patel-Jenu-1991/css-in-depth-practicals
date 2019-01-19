@@ -57,3 +57,10 @@ h2 {
 .examples dd {
   font-size: 1.05rem;
 }
+
+.examples dd a {
+  color: rgba(255, 214, 70, 0.92);
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(29, 29, 29, 0.68);
+}
