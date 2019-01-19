@@ -1,0 +1,59 @@
+:root {
+  box-sizing: border-box;
+  --thin-border: 1px solid #000;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgba(89, 143, 96, 0.87);
+  font-family: Helvetica, arial, sans-serif;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+.container {
+  background-color: rgba(158, 162, 158, 0.87);
+  border: var(--thin-border);
+  color: rgba(4, 4, 4, 0.95);
+  max-width: 1080px;
+  margin: 0 auto;
+  text-shadow: 1px 1px rgba(101, 97, 97, 0.72);
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 3rem;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+h2 {
+  letter-spacing: .1em;
+}
+
+.examples {
+  margin: 0 auto 1.5em;
+  width: 60%;
+}
+
+.examples dt {
+  font-size: 1.15rem;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-decoration: underline;
+}
+
+.examples dd {
+  font-size: 1.05rem;
+}
