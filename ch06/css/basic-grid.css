@@ -1,0 +1,58 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: rgba(89, 143, 96, 0.87);
+  font-family: Helvetica, arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header > h1 {
+  font-family: fantasy;
+  font-size: 3rem;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  background-color: rgba(238, 225, 51, 0.99);
+  color: rgba(87, 43, 212, 0.85);
+  font-weight: bold;
+  letter-spacing: .1em;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+
+.grid {
+  /* Makes the element a grid container */
+  display: grid;
+  /* Defines three columns of equal width */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Defines two rows of equal height */
+  grid-template-rows: 1fr 1fr;
+  /* Applies a gutter between each grid cell */
+  grid-gap: 0.5em;
+  /* Applies a margin to space grid layout from the nav */
+  margin-top: 2em;
+}
+
+.grid > * {
+  background-color: darkgray;
+  color: white;
+  padding: 2em;
+  border-radius: 0.5em;
+}
