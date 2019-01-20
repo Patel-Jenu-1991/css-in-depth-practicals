@@ -19,7 +19,7 @@ body * + * {
 }
 
 .container {
-  background-color: rgba(158, 162, 158, 0.87);
+  background-color: rgba(183, 190, 183, 0.8);
   border: var(--thin-border);
   color: rgba(4, 4, 4, 0.95);
   max-width: 1080px;
@@ -56,11 +56,11 @@ h2 {
 
 .examples dd {
   font-size: 1.05rem;
+  line-height: 1.1;
 }
 
 .examples dd a {
-  color: rgba(255, 214, 70, 0.92);
-  font-weight: bold;
+  color: rgba(16, 4, 249, 0.97);
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(29, 29, 29, 0.68);
+  text-shadow: 1px 1px 1px rgba(124, 122, 122, 0.9);
 }
