@@ -19,7 +19,7 @@ body * + * {
 }
 
 .container {
-  background-color: rgba(183, 190, 183, 0.8);
+  background-color: rgba(232, 232, 232, 0.68);
   border: var(--thin-border);
   color: rgba(4, 4, 4, 0.95);
   max-width: 1080px;
