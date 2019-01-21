@@ -1,0 +1,29 @@
+body {
+  background-color: #709b90;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.portfolio {
+  display: grid;
+  /* Sets a minimum column width of 200 px and auto-fills the grid */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Sets an implicit horizontal grid track size of 1 fr */
+  grid-auto-rows: 1fr;
+  grid-gap: 1em;
+}
+
+.portfolio > figure {
+  /* Overrides user agent margins */
+  margin: 0;
+}
+
+.portfolio img {
+  max-width: 100%;
+}
+
+.portfolio figcaption {
+  padding: 0.3em 0.8em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: right;
+}
