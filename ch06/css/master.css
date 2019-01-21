@@ -64,3 +64,7 @@ h2 {
   text-decoration: none;
   text-shadow: 1px 1px 1px rgba(124, 122, 122, 0.9);
 }
+
+.examples dd a:hover {
+  text-decoration: underline;
+}
