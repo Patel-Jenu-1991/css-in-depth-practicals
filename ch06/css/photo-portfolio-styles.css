@@ -15,11 +15,20 @@ body {
 }
 
 .portfolio > figure {
+  /* Makes each grid item a vertical flexbox */
+  display: flex;
+  flex-direction: column;
   /* Overrides user agent margins */
   margin: 0;
 }
 
 .portfolio img {
+  /* Uses flex grow to make the image fill
+   * the available space in the flex container */
+  flex: 1;
+  /* Allows the image to fill the box without
+   * being stretched (cropping edges instead) */
+  object-fit: cover;
   max-width: 100%;
 }
 
