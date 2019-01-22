@@ -3,33 +3,16 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.portfolio {
-  display: grid;
-  /* Sets a minimum column width of 200 px and auto-fills the grid */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* Sets an implicit horizontal grid track size of 1 fr */
-  grid-auto-rows: 1fr;
-  grid-gap: 1em;
-  /* Enables the dense grid placement algorithm */
-  grid-auto-flow: dense;
-}
-
 .portfolio > figure {
-  /* Makes each grid item a vertical flexbox */
-  display: flex;
-  flex-direction: column;
-  /* Overrides user agent margins */
+  /* Uses inline-block for the fallback layout */
+  display: inline-block;
+  max-width: 300px;
   margin: 0;
 }
 
 .portfolio img {
-  /* Uses flex grow to make the image fill
-   * the available space in the flex container */
-  flex: 1;
-  /* Allows the image to fill the box without
-   * being stretched (cropping edges instead) */
-  object-fit: cover;
   max-width: 100%;
+  object-fit: cover;
 }
 
 .portfolio figcaption {
@@ -39,8 +22,48 @@ body {
   text-align: right;
 }
 
-/* Enlarges featured images to span two grid tracks in each column */
-.portfolio .featured {
-  grid-row: span 2;
-  grid-column: span 2;
+/* Feature query for grid support */
+@supports (display: grid) {
+  /* Puts all grid layout styles within feature query block */
+  .portfolio {
+    display: grid;
+    /* Sets a minimum column width of 200 px and auto-fills the grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* Sets an implicit horizontal grid track size of 1 fr */
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    /* Enables the dense grid placement algorithm */
+    grid-auto-flow: dense;
+  }
+
+  .portfolio > figure {
+    /* Makes each grid item a vertical flexbox */
+    display: flex;
+    flex-direction: column;
+    /* Overrides fallback styles */
+    max-width: initial;
+  }
+
+  .portfolio img {
+    /* Uses flex grow to make the image fill
+     * the available space in the flex container */
+    flex: 1;
+    /* Allows the image to fill the box without
+     * being stretched (cropping edges instead) */
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .portfolio figcaption {
+    padding: 0.3em 0.8em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: right;
+  }
+
+  /* Enlarges featured images to span two grid tracks in each column */
+  .portfolio .featured {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
 }
