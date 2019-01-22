@@ -10,6 +10,8 @@ body {
   /* Sets an implicit horizontal grid track size of 1 fr */
   grid-auto-rows: 1fr;
   grid-gap: 1em;
+  /* Enables the dense grid placement algorithm */
+  grid-auto-flow: dense;
 }
 
 .portfolio > figure {
@@ -26,4 +28,10 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-align: right;
+}
+
+/* Enlarges featured images to span two grid tracks in each column */
+.portfolio .featured {
+  grid-row: span 2;
+  grid-column: span 2;
 }
