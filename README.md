@@ -36,6 +36,12 @@
   * Main axis and cross axis
   * Element sizes in flexbox
   * Element alignment in flexbox
+
+### **Chapter 06:** Grid Layout
+  * Using CSS' first true layout system---grid
+  * Understanding grid layout options
+  * Laying out items on a grid
+  * Using flexbox and grid together to build a cohesive web page layout
 ---
 Add general repo description upon completing each chapter
 
