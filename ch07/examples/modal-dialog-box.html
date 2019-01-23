@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=initial-width, initial-scale=1.0" />
+    <title>Modal Dialog Box</title>
+    <link rel="stylesheet" href="/css/modal.css">
+  </head>
+  <body>
+    <header class="top-banner">
+      <div class="top-banner-inner">
+        <p>
+          Find out what's going on at Wombat Coffee each month.
+          Sign up for our newsletter:
+          <!-- Button to trigger the modal -->
+          <button id="open">Sign Up</button>
+        </p>
+      </div>
+    </header>
+    <!-- Container for the modal -->
+    <div class="modal" id="modal">
+      <!-- A "backdrop" to obscure content behind the modal -->
+      <div class="modal-backdrop"></div>
+      <!-- Modal contents -->
+      <div class="modal-body">
+        <button class="modal-close" id="close">close</button>
+        <h2>Wombat Newsletter</h2>
+        <p>
+          Sign up for our monthly newsletter. No spam. We promise!
+        </p>
+        <form>
+          <p>
+            <label for="email">Email address:</label>
+            <input type="text" name="email" />
+          </p>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="/js/modal.js" charset="utf-8"></script>
+  </body>
+</html>
