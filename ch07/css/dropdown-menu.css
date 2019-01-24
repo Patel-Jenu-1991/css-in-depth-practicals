@@ -78,3 +78,59 @@ button {
   /* Adds the unicode character U+00D7 (multiplication sign) */
   content: "\00D7";
 }
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 1em auto;
+}
+
+.dropdown {
+  display: inline-block;
+  /* Establishes the containing block */
+  position: relative;
+}
+
+.dropdown-label {
+  padding: 0.5em 1.5em;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.dropdown-menu {
+  /* Hides the menu initially */
+  display: none;
+  position: absolute;
+  /* Positions the menu below the dropdown menu */
+  left: 0;
+  top: 2.1em;
+  min-width: 100%;
+  background-color: #eee;
+}
+.dropdown:hover .dropdown-menu {
+  /* Reveals the menu on hover */
+  display: block;
+}
+
+.submenu {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  border: 1px solid #999;
+}
+
+.submenu > li + li {
+  border-top: 1px solid #999;
+}
+
+.submenu > li > a {
+  display: block;
+  padding: 0.5em 1.5em;
+  background-color: #eee;
+  color: #369;
+  text-decoration: none;
+}
+
+.submenu > li > a:hover {
+  background-color: #fff;
+}
