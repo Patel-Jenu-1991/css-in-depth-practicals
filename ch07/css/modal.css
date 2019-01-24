@@ -59,4 +59,22 @@ button {
   right: 0.3em;
   padding: 0.3em;
   cursor: pointer;
+  /* Makes the button a small square */
+  font-size: 2em;
+  height: 1em;
+  width: 1em;
+  /* Forces the text to overflow the element and hides it */
+  text-indent: 10em;
+  overflow: hidden;
+  border: 0;
+}
+
+.modal-close::after {
+  position: absolute;
+  line-height: 0.5;
+  top: 0.2em;
+  left: 0.1em;
+  text-indent: 0;
+  /* Adds the unicode character U+00D7 (multiplication sign) */
+  content: "\00D7";
 }
