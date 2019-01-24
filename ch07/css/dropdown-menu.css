@@ -1,0 +1,80 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  /* Forces the page height to enable scrolling (for demo purposes only) */
+  min-height: 200vh;
+  margin: 0;
+}
+
+button {
+  padding: 0.5em 0.7em;
+  border: 1px solid #8d8d8d;
+  background-color: white;
+  font-size: 1em;
+}
+
+.top-banner {
+  padding: 1em 0;
+  background-color: #ffd698;
+}
+
+.top-banner-inner {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hides modal by default; JavaScript will set
+ * display: block when it opens the modal. */
+.modal {
+  display: none;
+}
+
+/* Uses a semi-transparent backdrop to obscure
+ * the rest of the page while the modal is open */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Positions the main part of the modal */
+.modal-body {
+  position: fixed;
+  top: 3em;
+  bottom: 3em;
+  right: 20%;
+  left: 20%;
+  padding: 2em 3em;
+  background-color: white;
+  /* Allows the modal body to scroll, if necessary */
+  overflow: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.3em;
+  right: 0.3em;
+  padding: 0.3em;
+  cursor: pointer;
+  /* Makes the button a small square */
+  font-size: 2em;
+  height: 1em;
+  width: 1em;
+  /* Forces the text to overflow the element and hides it */
+  text-indent: 10em;
+  overflow: hidden;
+  border: 0;
+}
+
+.modal-close::after {
+  position: absolute;
+  line-height: 0.5;
+  top: 0.2em;
+  left: 0.1em;
+  text-indent: 0;
+  /* Adds the unicode character U+00D7 (multiplication sign) */
+  content: "\00D7";
+}
