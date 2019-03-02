@@ -134,3 +134,27 @@ button {
 .submenu > li > a:hover {
   background-color: #fff;
 }
+
+.dropdown-label {
+  /* Increases the right padding to add space for the arrow */
+  padding: 0.5em 2em 0.5em 1.5em;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.dropdown-label::after {
+  content: "";
+  /* Positions the element on the right side of the label */
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  /* Uses the top border to form a down arrow */
+  border: 0.3em solid;
+  border-color:  black transparent transparent;
+}
+
+.dropdown:hover .dropdown-label::after {
+  top: 0.7em;
+  /* On hover, changes to an up arrow */
+  border-color: transparent transparent black;
+}
