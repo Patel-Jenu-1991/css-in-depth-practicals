@@ -38,6 +38,8 @@ button {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
+  /* Brings the backdrop in front of elements without a z-index */
+  z-index: 1;
 }
 
 /* Positions the main part of the modal */
@@ -51,6 +53,8 @@ button {
   background-color: white;
   /* Allows the modal body to scroll, if necessary */
   overflow: auto;
+  /* Brings the modal-body in front of the backdrop */
+  z-index: 2;
 }
 
 .modal-close {
