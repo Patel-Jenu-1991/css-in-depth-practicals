@@ -1,0 +1,184 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  /* Forces the page height to enable scrolling (for demo purposes only) */
+  min-height: 200vh;
+  margin: 0;
+}
+
+button {
+  padding: 0.5em 0.7em;
+  border: 1px solid #8d8d8d;
+  background-color: white;
+  font-size: 1em;
+}
+
+.top-banner {
+  padding: 1em 0;
+  background-color: #ffd698;
+}
+
+.top-banner-inner {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hides modal by default; JavaScript will set
+ * display: block when it opens the modal. */
+.modal {
+  display: none;
+}
+
+/* Uses a semi-transparent backdrop to obscure
+ * the rest of the page while the modal is open */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Brings the backdrop in front of elements without a z-index */
+  z-index: 1;
+}
+
+/* Positions the main part of the modal */
+.modal-body {
+  position: fixed;
+  top: 3em;
+  bottom: 3em;
+  right: 20%;
+  left: 20%;
+  padding: 2em 3em;
+  background-color: white;
+  /* Allows the modal body to scroll, if necessary */
+  overflow: auto;
+  /* Brings the modal-body in front of the backdrop */
+  z-index: 2;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.3em;
+  right: 0.3em;
+  padding: 0.3em;
+  cursor: pointer;
+  /* Makes the button a small square */
+  font-size: 2em;
+  height: 1em;
+  width: 1em;
+  /* Forces the text to overflow the element and hides it */
+  text-indent: 10em;
+  overflow: hidden;
+  border: 0;
+}
+
+.modal-close::after {
+  position: absolute;
+  line-height: 0.5;
+  top: 0.2em;
+  left: 0.1em;
+  text-indent: 0;
+  /* Adds the unicode character U+00D7 (multiplication sign) */
+  content: "\00D7";
+}
+
+.container {
+  /* Makes the container a flex container for two-column layout */
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  margin: 1em auto;
+  /* Artificially adds height to the container */
+  min-height: 100vh;
+}
+
+/* Lays out the two columns */
+.col-main {
+  flex: 1 80%;
+}
+
+.col-sidebar {
+  flex: 20%;
+}
+
+/* Applies sticky positioning to the side menu.
+ * It will dock 1 em from the top of the viewport. */
+.affix {
+  position: sticky;
+  top: 1em;
+}
+
+.dropdown {
+  display: inline-block;
+  /* Establishes the containing block */
+  position: relative;
+}
+
+.dropdown-label {
+  padding: 0.5em 1.5em;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.dropdown-menu {
+  /* Hides the menu initially */
+  display: none;
+  position: absolute;
+  /* Positions the menu below the dropdown menu */
+  left: 0;
+  top: 2.1em;
+  min-width: 100%;
+  background-color: #eee;
+}
+.dropdown:hover .dropdown-menu {
+  /* Reveals the menu on hover */
+  display: block;
+}
+
+.submenu {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  border: 1px solid #999;
+}
+
+.submenu > li + li {
+  border-top: 1px solid #999;
+}
+
+.submenu > li > a {
+  display: block;
+  padding: 0.5em 1.5em;
+  background-color: #eee;
+  color: #369;
+  text-decoration: none;
+}
+
+.submenu > li > a:hover {
+  background-color: #fff;
+}
+
+.dropdown-label {
+  /* Increases the right padding to add space for the arrow */
+  padding: 0.5em 2em 0.5em 1.5em;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.dropdown-label::after {
+  content: "";
+  /* Positions the element on the right side of the label */
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  /* Uses the top border to form a down arrow */
+  border: 0.3em solid;
+  border-color:  black transparent transparent;
+}
+
+.dropdown:hover .dropdown-label::after {
+  top: 0.7em;
+  /* On hover, changes to an up arrow */
+  border-color: transparent transparent black;
+}
