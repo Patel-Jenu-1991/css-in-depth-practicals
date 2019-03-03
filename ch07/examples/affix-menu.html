@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=initial-width, initial-scale=1.0" />
+    <title>Affix Menu</title>
+    <link rel="stylesheet" href="/css/affix-menu.css">
+  </head>
+  <body>
+    <header class="top-banner">
+      <div class="top-banner-inner">
+        <p>
+          Find out what's going on at Wombat Coffee each month.
+          Sign up for our newsletter:
+          <!-- Button to trigger the modal -->
+          <button id="open">Sign Up</button>
+        </p>
+      </div>
+    </header>
+    <!-- Container for the modal -->
+    <div class="modal" id="modal">
+      <!-- A "backdrop" to obscure content behind the modal -->
+      <div class="modal-backdrop"></div>
+      <!-- Modal contents -->
+      <div class="modal-body">
+        <button class="modal-close" id="close">close</button>
+        <h2>Wombat Newsletter</h2>
+        <p>
+          Sign up for our monthly newsletter. No spam. We promise!
+        </p>
+        <form>
+          <p>
+            <label for="email">Email address:</label>
+            <input type="text" name="email" />
+          </p>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Wraps existing content in a col-main for the main column -->
+      <main class="col-main">
+        <nav>
+          <!-- Container for the dropdown -->
+          <div class="dropdown">
+            <!-- Label will always be visible -->
+            <div class="dropdown-label">Main Menu</div>
+            <!-- Div to show and hide as the menu is opened and closed -->
+            <div class="dropdown-menu">
+              <ul class="submenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/coffees">Coffee</a></li>
+                <li><a href="/brewers">Brewers</a></li>
+                <li><a href="/specials">Specials</a></li>
+                <li><a href="/about">About us</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <h1>Wombat Coffee Roasters</h1>
+      </main>
+      <!-- Adds a second column with an affix element inside it -->
+      <aside class="col-sidebar">
+        <div class="affix">
+          <ul class="submenu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/coffees">Coffee</a></li>
+            <li><a href="/brewers">Brewers</a></li>
+            <li><a href="/specials">Specials</a></li>
+            <li><a href="/about">About us</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <script src="/js/modal.js" charset="utf-8"></script>
+  </body>
+</html>
