@@ -74,3 +74,52 @@ main {
   font-size: 0.875rem;
   text-transform: uppercase;
 }
+
+/* Mobile menu styles */
+.menu {
+  /* Establishes containing block for both absolutely positioned children */
+  position: relative;
+}
+
+.menu-toggle {
+  position: absolute;
+  /* A negative top pulls the button up outside its containing block */
+  top: -1.2em;
+  right: 0.1em;
+
+  /* Overrides user agent button styles */
+  border: 0;
+  background-color: transparent;
+
+  font-size: 3em;
+  width: 1em;
+  height: 1em;
+  line-height: 0.4;
+  /* Hides the text content of the button and fixes its size at 1em */
+  text-indent: 5em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-toggle::after {
+  position: absolute;
+  top: 0.2em;
+  left: 0.2em;
+  display: block;
+  /* Overlays the button with a unicode symbol, the hamburger icon */
+  content: "\2261";
+  text-indent: 0;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0;
+}
+
+.menu.is-open .menu-dropdown {
+  /* Displays the dropdown menu when the class is-open is added to the menu */
+  display: block;
+}
