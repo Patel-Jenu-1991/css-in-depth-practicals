@@ -1,0 +1,68 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(1, 102, 99, 0.84);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.82);
+  font-family: fantasy;
+  font-size: 3rem;
+  margin-top: 0;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  background-color: rgba(210, 210, 215, 0.85);
+  border: 1px solid #000;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 4em 8em;
+  text-shadow: 1px 1px rgba(121, 121, 121, 0.72);
+}
+
+.container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.examples dt {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.examples {
+  padding: 0 4em;
+}
+
+.examples dd {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.examples dd a {
+  color: rgba(33, 15, 233, 0.89);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.examples dd a:hover {
+  text-decoration: underline;
+}
