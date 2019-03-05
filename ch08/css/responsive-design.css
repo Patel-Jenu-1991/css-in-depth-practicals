@@ -1,0 +1,76 @@
+:root {
+  box-sizing: border-box;
+  /* Base font size scales slightly with the viewport */
+  font-size: calc(1vw + 0.6em);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a:link {
+  color: #1476b8;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:visited {
+  color: #1430b8;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: #b81414;
+}
+
+/* Page header and title */
+.page-header {
+  padding: 0.4em 1em;
+  background-color: #fff;
+}
+
+.title > h1 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0.2em 0;
+}
+
+.slogan {
+  color: #888;
+  font-size: 0.875em;
+  margin: 0;
+}
+
+.hero {
+  padding: 2em 1em;
+  text-align: center;
+  /* Adds the hero image to the page */
+  background-image: url(/img/coffee-beans.jpg);
+  background-size: 100%;
+  color: #fff;
+  /* A dark text shadow helps light text remain
+   * readable in front of complex backround */
+  text-shadow: 0.1em 0.1em 0.3em #000;
+}
+
+/* Main content */
+main {
+  padding: 1em;
+}
+
+.subtitle {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
