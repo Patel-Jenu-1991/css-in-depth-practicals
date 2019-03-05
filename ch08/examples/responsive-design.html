@@ -69,9 +69,11 @@
     <script type="text/javascript">
       (function () {
         var button = document.getElementById('toggle-menu');
+        // Click-event listener (also fires on a touchscreen tap event)
         button.addEventListener('click', function(event) {
           event.preventDefault();
           var menu = document.getElementById('main-menu');
+          // toggles is-open class on the menu
           menu.classList.toggle('is-open');
         });
       })();
