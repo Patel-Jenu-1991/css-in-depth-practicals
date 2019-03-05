@@ -123,3 +123,26 @@ main {
   /* Displays the dropdown menu when the class is-open is added to the menu */
   display: block;
 }
+
+/* Styling the navigational menu */
+.nav-menu {
+  margin: 0;
+  padding-left: 0;
+  border: 1px solid #ccc;
+  list-style: none;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Applies a border between each menu item */
+.nav-menu > li + li {
+  border-top: 1px solid #ccc;
+}
+
+.nav-menu > li > a {
+  display: block;
+  /* Uses a healthy amount of padding to ensure a large clickable area */
+  padding: 0.8em 1em;
+  color: #fff;
+  font-weight: normal;
+}
