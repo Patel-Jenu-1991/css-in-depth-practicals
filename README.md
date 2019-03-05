@@ -42,6 +42,13 @@
   * Understanding grid layout options
   * Laying out items on a grid
   * Using flexbox and grid together to build a cohesive web page layout
+
+### **Chapter 07:** Positioning and stacking contexts
+  * The types of element positioning: fixed, relative, and absolute
+  * Building modal dialogs and dropdown menus
+  * CSS triangles
+  * Understanding z-index and stacking contexts
+  * A new type of positioning: sticky
 ---
 Add general repo description upon completing each chapter
 
