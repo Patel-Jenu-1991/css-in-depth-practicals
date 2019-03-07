@@ -38,6 +38,13 @@ a:active {
   background-color: #fff;
 }
 
+@media (min-width: 35em) {
+  /* Increases header padding */
+  .page-header {
+    padding: 1em;
+  }
+}
+
 .title > h1 {
   color: #333;
   text-transform: uppercase;
@@ -71,9 +78,24 @@ a:active {
   text-shadow: 0.1em 0.1em 0.3em #000;
 }
 
+@media (min-width: 35em) {
+  .hero {
+    /* Increases hero image padding and font size */
+    padding: 5em 3em;
+    font-size: 1.2rem;
+  }
+}
+
 /* Main content */
 main {
   padding: 1em;
+}
+
+@media (min-width: 35em) {
+  /* Increases padding on main */
+  main {
+    padding: 2em 1em;
+  }
 }
 
 .subtitle {
