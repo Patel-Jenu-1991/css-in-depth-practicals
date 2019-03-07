@@ -15,6 +15,9 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/*
+ * Links
+ */
 a:link {
   color: #1476b8;
   font-weight: bold;
@@ -32,7 +35,9 @@ a:active {
   color: #b81414;
 }
 
-/* Page header and title */
+/*
+ * Header section
+ */
 .page-header {
   padding: 0.4em 1em;
   background-color: #fff;
@@ -42,6 +47,13 @@ a:active {
   /* Increases header padding */
   .page-header {
     padding: 1em;
+  }
+}
+
+@media (min-width: 50em) {
+  .page-header {
+    /* Increases left and right padding on edges of page to 4em */
+    padding: 1em 4em;
   }
 }
 
@@ -66,6 +78,9 @@ a:active {
   margin: 0;
 }
 
+/*
+ * Hero image
+ */
 .hero {
   padding: 2em 1em;
   text-align: center;
@@ -86,7 +101,16 @@ a:active {
   }
 }
 
-/* Main content */
+@media (min-width: 50em) {
+  .hero {
+    /* Increases hero padding on all sides for a larger hero image */
+    padding: 7em 6em;
+  }
+}
+
+/*
+ * Main section
+ */
 main {
   padding: 1em;
 }
@@ -98,6 +122,13 @@ main {
   }
 }
 
+@media (min-width: 50em) {
+  main {
+    /* Increases left and right padding on edges of page to 4em */
+    padding: 2em 4em;
+  }
+}
+
 .subtitle {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -105,7 +136,9 @@ main {
   text-transform: uppercase;
 }
 
-/* Mobile menu styles */
+/*
+ * Menu
+ */
 .menu {
   /* Establishes containing block for both absolutely positioned children */
   position: relative;
@@ -168,7 +201,9 @@ main {
   display: block;
 }
 
-/* Styling the navigational menu */
+/*
+ * Nav menu
+ */
 .nav-menu {
   margin: 0;
   padding-left: 0;
@@ -215,6 +250,16 @@ main {
   }
 }
 
+@media (min-width: 50em) {
+  .nav-menu {
+    /* Increases left and right padding on edges of page to 4em */
+    padding: 0 4em;
+  }
+}
+
+/*
+ * Main columns
+ */
 @media (min-width: 35em) {
   /* Uses flexbox for equal width columns */
   .row{
