@@ -214,3 +214,21 @@ main {
     text-align: center;
   }
 }
+
+@media (min-width: 35em) {
+  /* Uses flexbox for equal width columns */
+  .row{
+    display: flex;
+    /* Uses negative margins to widen the row container
+     * to compensate for column margins */
+    margin-left: -.75em;
+    margin-right: -.75em;
+  }
+
+  .column {
+    flex: 1;
+    /* Adds column gutters */
+    margin-right: 0.75em;
+    margin-left: 0.75em;
+  }
+}
