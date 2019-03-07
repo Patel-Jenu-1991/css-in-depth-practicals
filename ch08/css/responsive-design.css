@@ -4,6 +4,14 @@
   font-size: calc(1vw + 0.6em);
 }
 
+@media (min-width: 50em) {
+  :root {
+    /* Applies a non-scaling font size
+     * above the highest breakpoint */
+    font-size: 1.125em;
+  }
+}
+
 *,
 *::before,
 *::after {
