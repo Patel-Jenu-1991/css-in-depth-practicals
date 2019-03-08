@@ -49,6 +49,12 @@
   * CSS triangles
   * Understanding z-index and stacking contexts
   * A new type of positioning: sticky
+
+### **Chapter 08:** Responsive Design
+  * Building web pages for multiple devices and screen sizes
+  * Using media queries to alter your design based on viewport size
+  * Taking the "mobile first" approach
+  * Responsive images
 ---
 Add general repo description upon completing each chapter
 
