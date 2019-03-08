@@ -92,8 +92,8 @@ a:active {
 .hero {
   padding: 2em 1em;
   text-align: center;
-  /* Adds the hero image to the page */
-  background-image: url(/img/coffee-beans.jpg);
+  /* Uses the smallest image on mobile devices */
+  background-image: url(/img/coffee-beans-small.jpg);
   background-size: 100%;
   color: #fff;
   /* A dark text shadow helps light text remain
@@ -106,6 +106,8 @@ a:active {
     /* Increases hero image padding and font size */
     padding: 5em 3em;
     font-size: 1.2rem;
+    /* Uses a larger image on medium-size screens */
+    background-image: url(/img/coffee-beans-medium.jpg);
   }
 }
 
@@ -113,6 +115,8 @@ a:active {
   .hero {
     /* Increases hero padding on all sides for a larger hero image */
     padding: 7em 6em;
+    /* Uses the full resolution image on large screens */
+    background-image: url(/img/coffee-beans.jpg);
   }
 }
 
