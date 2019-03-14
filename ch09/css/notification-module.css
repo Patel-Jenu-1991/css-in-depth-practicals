@@ -13,3 +13,12 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+/* Targets the message module by its class name */
+.message {
+  padding: 0.8em 1.2em;
+  border-radius: 0.2em;
+  border: 1px solid #265559;
+  color: #265559;
+  background-color: #e0f0f2;
+}
