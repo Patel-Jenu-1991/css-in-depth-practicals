@@ -1,0 +1,15 @@
+/* Box sizing reset */
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Default font family */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
