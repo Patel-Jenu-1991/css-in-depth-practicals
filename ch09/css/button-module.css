@@ -13,3 +13,41 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+.container {
+  text-align: center;
+  padding: 5em;
+}
+
+/* Basic button styles */
+.button {
+  padding: 0.5em 0.8em;
+  border: 1px solid #265559;
+  border-radius: 0.2em;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+/* Green success color variant */
+.button--success {
+  border-color: #cfe8c9;
+  color: #fff;
+  background-color: #2f5926;
+}
+
+/* Red danger color variant */
+.button--danger {
+  border-color: #e8c9c9;
+  color: #fff;
+  background-color: #a92323;
+}
+
+/* Small variant */
+.button--small {
+  font-size: 0.8rem;
+}
+
+/* Large variant */
+.button--large {
+  font-size: 1.2rem;
+}
