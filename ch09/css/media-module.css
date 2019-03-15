@@ -13,3 +13,33 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
+
+/* Main container */
+.media {
+  padding: 1.5em;
+  background-color: #eee;
+  border-radius: 0.5em;
+}
+
+/* Clearfix */
+.media::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* The image and body sub-elements */
+.media__image {
+  float: left;
+  margin-right: 1.5em;
+}
+
+.media__body {
+  overflow: auto;
+  margin-top: 0;
+}
+
+/* The title within the body */
+.media__body > h4 {
+  margin-top: 0;
+}
