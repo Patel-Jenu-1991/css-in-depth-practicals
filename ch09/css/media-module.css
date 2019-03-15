@@ -43,3 +43,9 @@ body {
 .media__body > h4 {
   margin-top: 0;
 }
+
+/* Targets image sub-element, but only
+ * when right modifier is present */
+.media--right > .media__image {
+  float: right;
+}
