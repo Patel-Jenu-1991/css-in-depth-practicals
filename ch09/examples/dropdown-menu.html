@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="charset" content="width=device-width, initial-scale=1">
+    <title>Dropdown Menu</title>
+    <link rel="stylesheet" href="/css/dropdown-menu.css">
+  </head>
+  <body>
+    <div class="dropdown">
+      <!-- Toggle button for the dropdown -->
+      <button class="dropdown__toggle">Main Menu</button>
+      <!-- A drawer sub-element serves as the menu container -->
+      <div class="dropdown__drawer">
+        <!-- A menu module placed inside the drawer -->
+        <ul class="menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/coffees">Coffees</a></li>
+          <li><a href="/brewers">Brewers</a></li>
+          <li><a href="/specials">Specials</a></li>
+          <li><a href="/about">About us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      (function () {
+        var toggle = document.querySelector('.dropdown__toggle');
+        // Toggles the is-open class when the toggle button is clicked
+        toggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          var dropdown = event.target.parentNode;
+          dropdown.classList.toggle('is-open');
+        });
+      }());
+    </script>
+  </body>
+</html>
