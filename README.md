@@ -55,6 +55,12 @@
   * Using media queries to alter your design based on viewport size
   * Taking the "mobile first" approach
   * Responsive images
+
+### **Chapter 09:** Modular CSS
+  * Emerging problems as a project grows
+  * Organising CSS into modules
+  * Preventing escalating selector specificity
+  * Surveying popular CSS methodologies
 ---
 Add general repo description upon completing each chapter
 
