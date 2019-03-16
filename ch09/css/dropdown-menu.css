@@ -1,0 +1,84 @@
+/* default box sizing */
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* default font */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* dropdown module */
+.dropdown {
+  display: inline-block;
+  /* Establishes containing block for
+   * the absolutely positioned drawer */
+  position: relative;
+}
+
+.dropdown__toggle {
+  padding: 0.5em 2em 0.5em 1.5em;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #eee;
+}
+
+.dropdown__toggle::after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  border: 0.3em solid;
+  /* Draws the triangle using borders */
+  border-color: black transparent transparent;
+}
+
+.dropdown__drawer {
+  /* Hides the drawer initially... */
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 2.1em;
+  min-width: 100%;
+  background-color: #eee;
+}
+
+.dropdown.is-open .dropdown__toggle::after {
+  top: 0.7em;
+  /* Inverts the triangle while the dropdown is open */
+  border-color: transparent transparent black;
+}
+.dropdown.is-open .dropdown__drawer {
+  /* ...then displays it when the is-open class is present  */
+  display: block;
+}
+
+/* menu module */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+  border-top: 1px solid #999;
+}
+
+.menu > li + li {
+  border-top: 1px solid #999;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 0.5em 1.5em;
+  color: #369;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu > li > a:hover {
+  background-color: #fff;
+}
